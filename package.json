@@ -1,6 +1,6 @@
 {
   "name": "@svpkg/otp-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate OTPs faster than you can say 'secure login'—because even your passwords deserve a little fun!",
   "author": "Shubham Verma <shubhamverma1024@gmail.com>",
   "main": "./dist/index.js",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "test": "",
-    "build": "tsc",
+    "build": "tsc && npx -p typescript tsc --declaration --allowJs --emitDeclarationOnly --outDir dist",
     "start": "node dist/index.js"
   },
   "keywords": [],
